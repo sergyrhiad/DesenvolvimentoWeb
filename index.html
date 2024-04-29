@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sergy Rhiad - Portfólio</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        @font-face {
+            font-family: fonte2;
+            src: url('/font/Tropical\ County.woff2') format(woff2);
+        }
+        @font-face {
+            font-family: fonte1;
+            src: url('/font/Thundergood.woff2') format(woff2);
+        }
+        @font-face {
+            font-family: fonte3;
+            src: url('/font/AveriaSerif-BoldItalic.woff2') format(woff2);}
+        @font-face {
+            font-family: fonte4;
+            src: url('/font/Balivia.woff2') format(woff2);}
+        @font-face {
+            font-family: fonte5;
+            src: url('/font/Softers.woff2') format(woff2);}
+        body {
+            margin: 0; /* Remove margens padrão do body */
+            font-family: fonte2; /* Define a fonte\ */
+            background-color: #f9f9f9; /* Cor de fundo do corpo */
+            font-size: 20PX;
+        }
+        header {
+            text-align: center; /* Centraliza o conteúdo */
+            padding: 180px 0; /* Adiciona espaço interno superior e inferior */
+            background-color: #3c3c3c; /* Cor de fundo do cabeçalho */
+            color: #fefeff; /* Cor do texto no cabeçalho */
+        }
+        .sobre {
+            text-align: center; /* Centraliza o conteúdo */
+            padding: 280px 200px; /* Adiciona espaço interno superior e inferior */
+            background-color: #515151; /* Cor de fundo do cabeçalho */
+            color: #fefeff; /* Cor do texto no cabeçalho */
+        }
+        .formacao {
+            text-align: center; /* Centraliza o conteúdo */
+            padding: 280px 0; /* Adiciona espaço interno superior e inferior */
+            background-color: #666666; /* Cor de fundo do cabeçalho */
+            color: #fefeff; /* Cor do texto no cabeçalho */
+        }
+        .portifolio {
+            text-align: center; /* Centraliza o conteúdo */
+            padding: 280px 0; /* Adiciona espaço interno superior e inferior */
+            background-color: #8c8c8c; /* Cor de fundo do cabeçalho */
+            color: #fefeff; /* Cor do texto no cabeçalho */
+        }
+        .contato {
+            text-align: center; /* Centraliza o conteúdo */
+            padding: 280px 0; /* Adiciona espaço interno superior e inferior */
+            background-color: #b5b5b5; /* Cor de fundo do cabeçalho */
+            color: #fefeff; /* Cor do texto no cabeçalho */
+        }
+        h1 {
+            font-family: fonte3;
+            font-size: 60px;
+            color: #f5d131;
+            display: inline;
+            margin-left: 60px; /* Adiciona espaço entre a imagem e o texto */
+            color: rgb(245, 214, 77); /* Cor do texto */
+
+        }
+        h2 {
+            color: #f5d131; /* Cor dos títulos */}
+        .ftPerfil {
+            margin-left: 200px;
+        }
+        h3 {
+            font-family: fonte5;
+            margin-left: 60px;
+            font-size: 35px;
+            }
+        nav {
+            position: fixed; /* Torna a navegação fixa */
+            top: 0; /* Fixa a navegação no topo da janela */
+            width: 100%; /* Define a largura como 100% da janela */
+            background-color: #070606; /* Cor de fundo da navegação */
+            z-index: 1000; /* Garante que a navegação fique sobre o conteúdo */
+            padding: 20px 0; /* Adiciona espaçamento interno superior e inferior */
+            }
+        nav a {
+            color: #fff; /* Cor dos links */
+            text-decoration: none; /* Remove sublinhado dos links */
+            margin: 0 30px; /* Adiciona espaçamento entre os links */
+        }
+        nav a:hover {
+            color: #f5d131; /* Cor dos links ao passar o mouse */
+        }
+        main {
+            padding: 20px; /* Adiciona espaçamento interno */
+            background-color: #fff; /* Cor de fundo do conteúdo principal */
+        }
+        form {
+            max-width: 400px; /* Largura máxima do formulário */
+            margin: 0 auto; /* Centraliza o formulário na página */
+            padding: 20px; /* Adiciona espaçamento interno */
+            background-color: #f9f9f9; /* Cor de fundo do formulário */
+            border-radius: 10px; /* Adiciona bordas arredondadas */
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Adiciona sombra */
+        }
+        label {
+            display: block; /* Exibe os rótulos em blocos */
+            margin-bottom: 10px; /* Adiciona espaçamento inferior */
+            color: #333; /* Cor dos rótulos */
+        }
+        input[type="text"],
+        input[type="email"],
+        textarea {
+            width: 100%; /* Largura total */
+            padding: 10px; /* Adiciona espaçamento interno */
+            margin-bottom: 20px; /* Adiciona espaçamento inferior */
+            border: 1px solid #ccc; /* Adiciona borda */
+            border-radius: 5px; /* Adiciona bordas arredondadas */
+            box-sizing: border-box; /* Inclui padding e borda na largura */
+        }
+        input[type="submit"] {
+            background-color: #4CAF50; /* Cor de fundo do botão de envio */
+            color: white; /* Cor do texto do botão de envio */
+            padding: 15px 20px; /* Adiciona espaçamento interno */
+            border: none; /* Remove a borda */
+            border-radius: 5px; /* Adiciona bordas arredondadas */
+            cursor: pointer; /* Muda o cursor ao passar por cima */
+            transition: background-color 0.3s; /* Transição suave */
+        }
+        input[type="submit"]:hover {
+            background-color: #45a049; /* Cor de fundo ao passar o mouse */
+        }
+        img {
+            border: 2px solid #ccc;
+            border-radius: 50%; /* Define um raio de borda de 50%, tornando a borda redonda */
+
+            margin-top: 50px;
+            height: 350px;
+        }
+        #profissional {
+            font-size: 40px;
+            font-family: fonte3;
+        }
+        #textProfissional{
+            font-size: 30px;
+            font-family: fonte5;
+        }
+        #tituliformacao {
+            font-size: 50px;
+            font-family: fonte3;
+        }
+        #f1 {
+            font-size: 30px;
+            font-family: fonte5;
+        }
+        #f2 {
+            font-size: 30px;
+            font-family: fonte5;
+        }
+        #f3 {
+            font-size: 30px;
+            font-family: fonte5;
+        }
+        #port {
+            font-size: 50px;
+            font-family: fonte3;
+        }
+        #port1 {
+            font-size: 30px;
+            font-family: fonte5;}
+        .botao {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #007bff;
+            color: #fff;
+            text-decoration: none;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+}
+
+.botao:hover {
+    background-color: #0056b3;
+}
+    </style>
+</head>
+<body>
+    <header>
+        <table class="ftPerfil">
+            <tr>
+            <td><img src="img/Design sem nome.png" alt="Foto de Sérgy Rhiad"></td>
+            <td><h1>Oi Meu nome é Sérgy Rhiad</h1>
+            <h3>E este é o meu Portfólio , aqui você encontra alguns <br> dos meus projetos mais recentes.</h3></td>
+            </tr>
+        </table>
+    </div>
+        <nav>
+            <a href="#" onclick="scrollToSection('sobre')">Sobre Mim</a>
+            <a href="#" onclick="scrollToSection('formacao')">Formação</a>
+            <a href="#" onclick="scrollToSection('portifolio')">Portfólio</a>
+            <a href="#" onclick="scrollToSection('contato')">Contato</a>
+        </nav>
+    </header>
+    <main >
+        <section id="sobre" class="sobre">
+            <h2 id="profissional">O Profissional por Trás do Portfólio!</h2>
+            <p id="textProfissional">
+                Entusiasta da tecnologia com mentalidade inovadora. Comunicativo, colaborativo e comprometido com o aprendizado contínuo.<br>
+                 Aplico tecnologia para causar impacto positivo na comunidade, buscando sempre novos desafios e crescimento profissional.
+            </p>
+            <a href="/img/crrrr.pdf" download="curriculo.pdf" class="botao">Baixar Currículo (PDF)</a>
+        </section>
+        <section id="formacao" class="formacao">
+            <h2 id="tituliformacao">Formação</h2>
+            <p id="f1">Análise e Desenvolvimento de Sistemas - UNINTER (Cursando)</p>
+            <p id="f2">Engenharia Elétrica - Universidade Tuiuti do Paraná (Interrompido em 2019)</p>
+            <p id="f3">Técnico em Eletrotécnica - SENAI - PR (Concluído em 2021)</p>
+        </section>
+        <section id="portifolio" class="portifolio">
+            <h2 id="port">Portfólio</h2>
+            <p id="port1">Aqui estão alguns projetos em que trabalhei:</p>
+            <table>
+                <tr><a href="https://github.com/sergyrhiad/exercicios_tema4">Projeto 1</a></tr><br>
+                <tr><a href="https://github.com/sergyrhiad/Analise-e-modelagem-de-Sistemas">Projeto 2</a></tr>
+            </table>
+        </section>
+        <section id="contato" class="contato">
+            <h2>Contato</h2>
+            <p>Preencha o formulário abaixo para entrar em contato comigo:</p>
+            <form action="enviar_contato.php" method="post">
+                <label for="nome">Nome:</label>
+                <input type="text" id="nome" name="nome" required>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                <label for="mensagem">Mensagem:</label>
+                <textarea id="mensagem" name="mensagem" required></textarea>
+                <input type="submit" value="Enviar">
+            </form>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 Sérgy Rhiad. Todos os direitos reservados.</p>
+    </footer>
+    <script>
+        // Função para rolar suavemente até a seção correspondente
+        function scrollToSection(id) {
+            const section = document.getElementById(id);
+            if (section) {
+                window.scrollTo({
+                    top: section.offsetTop,
+                    behavior: 'smooth'
+                });
+            }
+        }
+    </script>
+</body>
+</html>
